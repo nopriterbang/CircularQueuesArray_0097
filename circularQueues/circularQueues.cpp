@@ -33,7 +33,20 @@ void display() {
 		//jika FRONT > REAR, iterasi dari FRONT hingga akhir array
 		while (FRONT_Position <= max - 1)
 		{
-			cout << queue_array[FRONT_Position] << " ";
+			cout << queue_array[FRONT_position] << " ";
 			FRONT_Position++;
 		}
+
+		FRONT_Position = 0;
+
+		//iterasi dari awal array hingga REAR
+		while (FRONT_Position <= REAR_position)
+		{
+			cout << queue_array[FRONT_position] << " ";
+			FRONT_Position++;
+		}
+		cout << endl;
+	}
+
+
 };
