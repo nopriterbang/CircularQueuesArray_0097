@@ -37,19 +37,19 @@ class Queues {
 		else
 		{
 		//jika FRONT > REAR, iterasi dari FRONT hingga akhir array
-		while (FRONT_Position <= max - 1)
+		while (FRONT_position <= max - 1)
 		{
 			cout << queue_array[FRONT_position] << " ";
-			FRONT_Position++;
+			FRONT_position++;
 		}
 
-		FRONT_Position = 0;
+		FRONT_position = 0;
 
 		//iterasi dari awal array hingga REAR
-		while (FRONT_Position <= REAR_position)
+		while (FRONT_position <= REAR_position)
 		{
 			cout << queue_array[FRONT_position] << " ";
-			FRONT_Position++;
+			FRONT_position++;
 		}
 		cout << endl;
 	}
@@ -74,14 +74,33 @@ while (true) {
 		cout << endl;
 
 		switch (ch) {
-		
-		
+		case '1': {
+
+		}
+		case '2': {
+			q.remove();
+			break;
+		}
+		case '3': {
+			q.display();
+			break;
+		}
+		case '4': {
+			return 0;
+		}
+		default: {
+			cout << "Invalid option!!" << endl;
+			break;
+		}
 		}
 
-	
+
+	}
+
+	catch (exception& e) {
+		cout << "Check for the values entered." << endl;
 	}
 
 
-
-
+}
 }
