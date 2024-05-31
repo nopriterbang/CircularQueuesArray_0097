@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+class Queues {
+
 void display() {
 	int FRONT_position = FRONT;
 	int REAR_position = REAR;
